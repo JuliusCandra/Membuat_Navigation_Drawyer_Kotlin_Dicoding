@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dev_candra.navigation_drawyer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.dev_candra.navigation_drawyer.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.dev_candra.navigation_drawyer.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        tools:layout="@layout/fragment_tools"
+        android:label="Tools"
+        android:name="com.dev_candra.navigation_drawyer.ui.fragment.ToolsFragment" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:label="Share"
+        tools:layout="@layout/fragment_share"
+        android:name="com.dev_candra.navigation_drawyer.ui.fragment.FragmentShare"/>
+
+    <fragment android:name="com.dev_candra.navigation_drawyer.ui.fragment.Map"
+        android:id="@+id/nav_map"
+        tools:layout="@layout/fragment_map"
+        android:label="Map" />
+
+    <fragment android:name="com.dev_candra.navigation_drawyer.ui.fragment.Hotel"
+        android:label="Hotel"
+        tools:layout="@layout/fragment_hotel"
+        android:id="@+id/nav_hotel" />
+
+    <fragment android:name="com.dev_candra.navigation_drawyer.ui.fragment.Subway"
+        android:label="Subway"
+        tools:layout="@layout/fragment_subway"
+        android:id="@+id/nav_subway" />
+    <fragment android:name="com.dev_candra.navigation_drawyer.ui.fragment.FragmentSend"
+        tools:layout="@layout/fragment_send"
+        android:id="@+id/nav_send"
+        android:label="Send"
+        />
+</navigation>
